@@ -1,13 +1,15 @@
 import BlogsContainer from "../components/BlogsContainer"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import HeroSection from "../components/HeroSection"
 
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      {/* <Header></Header> */}
+      <HeroSection />
       <BlogsContainer />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

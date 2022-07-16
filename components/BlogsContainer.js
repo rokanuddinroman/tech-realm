@@ -21,12 +21,13 @@ const BlogsContainer = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>
+                <h1 className='text-[25px] font-semibold'>Latest Blogs</h1>
                 <div className={styles.blogs}>
                     {blogs.map(blog => {
                         return <div className={styles.blog} key={0}>
                             <div className={styles.thumbnail}>
                                 <Image
-                                    src={defaultThumb}
+                                    src={blog.thumbnail}
                                     alt={blog.title}
                                     height={216}
                                     width={384}
@@ -37,7 +38,11 @@ const BlogsContainer = () => {
                                     <Link href={`/${blog.slug}`}>{blog.title}</Link>
                                 </h1>
                                 <p className={styles.blogDetailp}>{blog.content.slice(0, 120)}</p>
-                                <p className='absolute bottom-[10px]'>Published by <span className={styles.author}>{blog.publisher}</span></p>
+                                <p className='absolute bottom-[10px] text-[14px]'>
+                                    Published by <Link href={`/${blog.slug}`}>
+                                        <span className={styles.author}>{blog.publisher}</span>
+                                    </Link>
+                                </p>
                                 <p className='absolute right-0'>{blog.readTime}</p>
                             </div>
                         </div>
