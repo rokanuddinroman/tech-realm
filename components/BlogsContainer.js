@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import defaultThumb from '../static/tutorial.jpg'
+// import defaultThumb from '../static/tutorial.jpg'
 import styles from '../styles/BlogsContainer.module.css'
 import Link from 'next/link';
 
