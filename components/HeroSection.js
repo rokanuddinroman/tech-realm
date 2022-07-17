@@ -24,7 +24,7 @@ const HeroSection = () => {
                             <div className="w-full lg:w-5/12 px-4">
                                 <div className="hero-content">
                                     <h1 className="text-dark font-bold text-4xl sm:text-[42px] lg:text-[40px] xl:text-[42px] leading-snug mb-3 ">
-                                        <Link href="http://localhost:3000/post-1">
+                                        <Link href="https://tech-realm.vercel.app/nothing-phone-1-review">
                                             Nothing Phone 1 review: something else
                                         </Link>
                                     </h1>
