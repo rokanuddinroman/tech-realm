@@ -10,7 +10,7 @@ const Post = () => {
 
     const [post, setPost] = useState({})
     useEffect(() => {
-        fetch(`https://tech-realm.vercel.app/api/getblog?slug=${slug}`)
+        fetch(`https://tech-realm.vercel.app/api/getblog?slug=post-1`)
             .then(res => res.json())
             .then(data => setPost(data))
     }, [])
