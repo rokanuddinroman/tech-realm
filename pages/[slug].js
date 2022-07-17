@@ -10,7 +10,7 @@ const Post = () => {
 
     const [post, setPost] = useState({})
     useEffect(() => {
-        fetch(`https://tech-realm.vercel.app/api/getblog?slug=post-1`)
+        fetch(`https://tech-realm.vercel.app/api/getblog?slug=${slug}`)
             .then(res => res.json())
             .then(data => setPost(data))
     }, [])
@@ -19,6 +19,7 @@ const Post = () => {
         <div>
             <div className="max-w-[800px] mx-auto">
                 <h1 className='mt-10 text-[30px] font-bold text-center'>{post.title}</h1>
+                <h1 className='mt-10 text-[30px] font-bold text-center'>{slug}</h1>
                 <p className='text-center mb-4'>{post.publisher} - {post.readTime}</p>
                 <div className="flex justify-center">
                     <Image
